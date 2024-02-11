@@ -17,7 +17,6 @@ RSpec.describe 'Account API', type: :request do # rubocop:disable Metrics/BlockL
       end
     end
   end
-
   describe 'POST /accounts' do
     context ':create' do
       it 'create account' do
@@ -28,7 +27,6 @@ RSpec.describe 'Account API', type: :request do # rubocop:disable Metrics/BlockL
       end
     end
   end
-
   describe 'DELETE /accounts' do
     context ':destroy' do
       let!(:account) { FactoryBot.create(:account, username: 'user', email: 'user@gmail.com') }
